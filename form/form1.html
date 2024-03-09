@@ -42,6 +42,39 @@
                 font: size 13px;
                 margin-bottom: 10px;
             }
+            .gender {
+                display: flex;
+                flex-direction: column;
+                margin-left: 3px;
+                padding: 5px;
+                align-items: center;
+                margin: 5px;
+                
+
+            }
+            .gender-label {
+                margin-bottom: 10px;
+            }
+            .feedback {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .textarea {
+                width: 300px;
+            }
+            .country {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 10px;
+            }
+            .mycountry{
+                margin-bottom: 10px;
+            }
+            .myselect {
+                width: 300px;
+            }
 
 
         </style>
@@ -51,23 +84,50 @@
         <form>
             <div class="first-name">
             <label>First Name</label>
-            <input type="text" placeholder="First Name">
+            <input type="text" placeholder="First Name" required>
             </div>
 
             <div class="second-name">
             <label>Second Name</label>
-            <input type="text"placeholder="Second Name">
+            <input type="text"placeholder="Second Name"required>
             </div>
 
             <div class="email">
             <label>Email</label>
-            <input type="email"placeholder="Email">
+            <input type="email"placeholder="Email"required>
             </div>
 
             <div class="contact">
             <label>Contact</label>
-            <input type="contact"placeholder="Contact">
+            <input type="contact"placeholder="Contact"required>
             </div>
+
+            <div class="gender">
+                <label class="gender-label">Gender:</label>
+
+                <label>Female</label>
+                <input type="radio" name="gender" value="female"required>
+
+                <label>Male</label>
+                <input type="radio" name="gender" value="male"required>
+
+                <label>Other</label>
+                <input type="radio" name="gender" value="other"required>
+            </div>
+            <div class="country">
+                <label class="mycountry">Country</label>
+                <select class="myselect">
+                    <option>USA</option>
+                    <option>KENYA</option>
+                </select>
+
+            </div>
+
+            <div class= "feedback">
+            <label>Feedback</label>
+            <textarea class="textarea" cols="40" rows="5"></textarea>
+            </div>
+
 
             <div class="submit">
             <button>Submit</button>

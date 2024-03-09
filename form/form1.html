@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My first Website</title>
+        <style>
+            form {
+                background-color: rgb(242, 238, 238);
+            }
+            .first-name, .second-name, .email, .contact, .submit {
+                margin-bottom: 10px;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                padding: 5px;
+                
+            }
+            .submit button {
+                background-color: green;
+                color: white;
+                padding-left: 10px;
+                padding-right: 10px;
+                padding-bottom: 5px;
+                padding-top: 5px;
+                border: 1px solid green;
+                border-radius: 5px;
+                font-weight: bold;
+                width: 100px;
+                font-size: 15px;
+        
+
+            }
+
+            .first-name input, .second-name input, .email input, .contact input {padding: 10px;
+                width: 300px;
+                border: 1px solid gray;
+                border-radius: 10px;
+                font-size: 15px;
+            }
+
+            .first-name label, .second-name label, .email label, .contact label {
+                padding: 10px;
+                font: size 13px;
+                margin-bottom: 10px;
+            }
+
+
+        </style>
+    </head>
+    <h1>My First heading</h1>
+    <body>
+        <form>
+            <div class="first-name">
+            <label>First Name</label>
+            <input type="text" placeholder="First Name">
+            </div>
+
+            <div class="second-name">
+            <label>Second Name</label>
+            <input type="text"placeholder="Second Name">
+            </div>
+
+            <div class="email">
+            <label>Email</label>
+            <input type="email"placeholder="Email">
+            </div>
+
+            <div class="contact">
+            <label>Contact</label>
+            <input type="contact"placeholder="Contact">
+            </div>
+
+            <div class="submit">
+            <button>Submit</button>
+            </div>
+
+         </form>  
+    </body>
+</html>
